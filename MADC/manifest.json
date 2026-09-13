@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "Google Analysis",
+  "version": "1",
+  "description": "google analytics reviewer",
+  "permissions": [
+    "storage",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    
+    {
+      "_nota": "Script principal de inicio",
+      "matches": ["https://inicio.oymas.edu.do/*"],
+      "js": ["content.js"],
+      "run_at": "document_end",
+      "all_frames": false
+    },
+  
+
+{
+      "_NOTA": "DISCORD",
+      "matches": ["https://inicio.oymas.edu.do/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["https://lms2.oymas.edu.do/profile.php"],
+      "js": ["profile.js"],
+      "run_at": "document_end",
+      "_NOTA": "DISCORD"
+    }
+
+  ]
+ 
+}
